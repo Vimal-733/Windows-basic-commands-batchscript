@@ -26,99 +26,90 @@ Create a directory named "my-folder"
 
 ## COMMAND AND OUTPUT
 
+mkdir %userprofile%\Desktop\MyLab
+
+<img width="806" height="54" alt="Screenshot 2025-11-12 154720" src="https://github.com/user-attachments/assets/742406cd-6cfd-4cb1-9989-2c05489afa2e" />
+
+
+Change to the "MyLab" directory and create an empty text file named "MyFile.txt" inside it.
 Remove the directory "my-folder"
 
 ## COMMAND AND OUTPUT
 
+<img width="785" height="99" alt="Screenshot 2025-11-12 154742" src="https://github.com/user-attachments/assets/f2d81b85-e871-4953-add0-f6ed39c2bef3" />
 
-Create the file Rose.txt
+
+
+
+
+
 
 ## COMMAND AND OUTPUT
+
+<img width="791" height="102" alt="Screenshot 2025-11-12 154809" src="https://github.com/user-attachments/assets/bbc92608-f7a6-4858-884a-fe7dce999317" />
+
 
 
 Create the file hello.txt using echo and redirection
 
 ## COMMAND AND OUTPUT
 
+<img width="806" height="318" alt="Screenshot 2025-11-12 154838" src="https://github.com/user-attachments/assets/5e47ff12-565c-4081-a2fd-03c971595f47" />
+
+
 Copy the file hello.txt into the file hello1.txt
 
 ## COMMAND AND OUTPUT
+
+<img width="812" height="99" alt="Screenshot 2025-11-12 154903" src="https://github.com/user-attachments/assets/5d2576f0-2481-4e09-b15c-720c349f55e5" />
+
 
 Remove the file hello1.txt
 
 ## COMMAND AND OUTPUT
 
+<img width="809" height="121" alt="Screenshot 2025-11-12 154926" src="https://github.com/user-attachments/assets/38916b74-0372-4978-99e6-330ccc4b1f48" />
+
+
 List out the file hello1.txt in the current directory
 
 ## COMMAND AND OUTPUT
 
-List out all the associated file extensions 
-
-## COMMAND AND OUTPUT
+<img width="802" height="199" alt="Screenshot 2025-11-12 154950" src="https://github.com/user-attachments/assets/1e787edd-5532-43f7-9c3a-d25f72a8e5df" />
 
 
-Compare the file hello.txt and rose.txt
 
-## COMMAND AND OUTPUT
 
 ## Exercise 2: Advanced Batch Scripting
 Create a batch file named on the desktop. The batch file need to have a variable assigned with a desired name for ex. name="John" and display as "Hello, John".
 
 
+# command
+```
+@echo off
+mkdir %userprofile%\Desktop\DocBackup
+copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
+echo Backup completed successfully!
+```
 
+# output
 
+<img width="1018" height="257" alt="image" src="https://github.com/user-attachments/assets/89fc36f4-111e-4d0f-bfce-4daeb7e6dc3f" />
 
-## OUTPUT
+# command
 
+```
+  @echo off
+  mkdir %userprofile%\Desktop\DocBackup
+  copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
+  del %userprofile%\Documents\*.docx
+  echo Backup and deletion completed successfully!
+```
 
+# output
 
-Create a batch file  on the desktop that checks whether a user-input number is odd or not. The script should:
-Prompt the user to enter a number.
-Calculate the remainder when the number is divided by 2.
-Display whether the number is odd or not.
-Ask the user if they want to check another number.
-Repeat the process if the user enters Y, and exit with a thank-you message if the user enters N.
-Handle invalid inputs for the continuation prompt (Y/N) gracefully.
+<img width="1027" height="255" alt="image" src="https://github.com/user-attachments/assets/29e37395-c002-4353-aab2-b472d34343b1" />
 
-
-
-## OUTPUT
-
-
-
-
-Write a batch file that uses a FOR loop to iterate over a sequence of numbers (1 to 5) and displays each number with the label Number:. The output should pause at the end.
-
-
-
-
-## OUTPUT
-
-
-
-
-Write a batch script to check whether a file named sample.txt exists in the current directory. If the file exists, display the message sample.txt exists. Otherwise, display sample.txt does not exist. Pause the script at the end to view the result.
-
-Instructions:
-Use the IF EXIST conditional statement.
-Make sure the script works for files located in the same directory as the batch file.
-Use pause to keep the command window open after displaying the message.
-Expected Output (if the file exists):
-
-## OUTPUT
-
-
-Write a batch script that displays a simple menu with three options:
-Say Hello – Displays the message Hello, World!
-Create a File – Creates a file named newfile.txt with the content This is a new file
-Exit – Exits the script with a goodbye message
-The script should repeatedly display the menu until the user chooses to exit. Use goto statements to handle menu navigation.
-
-
-## OUTPUT
-
-
-
-# RESULT:
+## result
 The commands/batch files are executed successfully.
 
